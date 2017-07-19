@@ -1,5 +1,5 @@
-$background-color: lightgrey;
-
-body {
-    background: $background-color;
-}
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Zilla+Slab');
+@import "variables";
+@import "html-tags";
+@import "components/header";
