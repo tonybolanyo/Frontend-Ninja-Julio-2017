@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# la carpeta dist no formar parte del repo
+dist/
