@@ -14,7 +14,7 @@ gulp.task("default", ["html", "sass"], function(){
     gulp.watch(["src/scss/*.scss", "src/scss/**/*.scss"], ["sass"]);
 
     // observa cambios en los archivos HTML y entonces recarga el navegador
-    gulp.watch("src/*.html", ["html"]);
+    gulp.watch(["src/*.html", "src/**/*.html"], ["html"]);
 });
 
 // compilar sass
