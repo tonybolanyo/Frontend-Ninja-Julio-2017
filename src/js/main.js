@@ -1,8 +1,8 @@
 window.$ = window.jQuery = require("jquery"); // Hace jQuery accesible públicamente
 
-import { SongsService } from "./SongsService";
+import SongsService from "./SongsService";
 
-const songService = new SongsService();
+const songService = new SongsService("/songs/");
 
 // Cargar la lista de canciones con AJAX
 songService.list(songs => {
