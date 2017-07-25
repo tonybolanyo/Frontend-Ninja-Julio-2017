@@ -30,3 +30,11 @@ $mobile-portrait-width: 375px;
 $mobile-landscape-width: 767px;
 $tablet-portrait-width: $mobile-landscape-width + 1;
 $tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-grastur;
+$form-input-outline-color: $color-grastur;
+$form-button-background-color: $color-grastur;
+$form-button-font-color: $color-less-is-less;
+$form-error-background-color: $color-amazing-39;
+$form-error-font-color: $color-less-is-less;
