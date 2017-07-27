@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <style>
+        img { max-width: 100%; }
+        @media (min-width: 700px) {
+            img { max-width: 50%; }
+        }
+        @media (min-width: 1024px) {
+            img { max-width: 75%; }
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source srcset="img/1024px.png 1024w, img/350-700px.png 750w" media="(min-width:700px)">
+        <source srcset="img/1024px.png 1024w, img/1200px.png 1200w, img/768-1536px.png 1536w" media="(min-width:1024px)">
+        <img src="img/1024px.png" srcset="img/1024px.png 1024w, img/1200px.png 1200w, img/350-700px.png 750w, img/768-1536px.png 1536w">
+    </picture>
+    <img src="img/1024px.png" srcset="img/1024px.png 1024w, img/1200px.png 1200w, img/350-700px.png 750w, img/768-1536px.png 1536w">
+</body>
+</html>
