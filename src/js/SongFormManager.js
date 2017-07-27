@@ -1,6 +1,7 @@
 const $ = require("jquery");
 
 import UIManager from './UIManager';
+import PubSub from 'pubsub-js';
 
 export default class SongFormManager extends UIManager {
 
@@ -51,7 +52,7 @@ export default class SongFormManager extends UIManager {
             cover_url: this.element.find("#cover_url").val()
         };
         this.songsService.save(song, success => {
-            // TODO: recargar el listado de canciones
+            PubSub.publish("new-song", song); // publicamos el evento que informa de la creación de una canción 
             this.resetForm();
             this.setIdeal();
         }, error => {
